@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.cointiner{
+    width: 100%;
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid black;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+header nav img{
+    width: 100px;
+    height: 80%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+header nav .navbar-links{
+    display: flex;
+    gap: 50px;
+}
+header nav .navbar-links li{
+    list-style: none;
+}
+header nav .navbar-links li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    transition: .3s;
+}
+header nav .navbar-links li a:hover{
+    color: rgb(255, 0, 0);
+}
+header nav .login{
+    width: 190px;
+    height: 60px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .login button{
+   width: 85px;
+   height: 40px;
+   cursor: pointer;font-size: 16px;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 3px 3px 5px 0px rgb(104, 103, 103);
+   font-weight: 500;
+   position: relative;
+   transition: .2s;
+}
+header nav .navbar-links li a::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: -4px;
+    background-color: black;
+    position: absolute;
+    transition: .1s;
+}
+header nav .navbar-links li a:hover::after{
+    height: 2px;
+}
+
+header nav .login button:hover{
+    scale: 1.1;
+    letter-spacing: 1.1px;
+}
+header nav .login button:focus{
+    scale: 1;
+    letter-spacing: 0;
+}
+header nav .login button:hover{
+    background: linear-gradient(to right, yellow 5% 2%,rgb(255, 250, 250)5% 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    width: 100%;
+    height: 325vh;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+main>h1{
+  padding: 60px 0px;
+  /* margin-left: 400px; */
+  padding-left: 90px;
+  font-size: 40px;
+}
+main>h1:nth-child(3){
+    padding: 60px 0px;
+    /* margin-left: 300px; */
+    font-size: 40px;
+    padding-left: 90px;
+}
+main>h1:nth-child(5){
+    padding: 60px 0px;
+    /* margin-left: 300px; */
+    font-size: 40px;
+    padding-left: 90px;
+}
+main .main-banner{
+    width: 1320px;
+    height: 489px;
+    /* border: 2px solid red; */
+    margin-left: 95px;
+    /* margin-top: 100px; */
+    background-image: url("https://www.globalexperiences.pitt.edu/sites/default/files/styles/gallery_default/public/gallery_images/University%20of%20New%20South%20Whales%20-%20Australia%20-%20Quad.jpg?itok=BZ9_gERD");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 10px 1px rgb(61, 60, 60);
+    display: flex;
+    border-radius: 4px;
+}
+main .main-banner .banner-heading{
+    width: 870px;
+    height: 180px;
+    /* border: 2px solid red;    */
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+    gap: 20px;
+    margin-left: 199px;
+    margin-top: 299px;
+    text-align: center;
+}
+main .main-banner .banner-heading h1{
+    font-size: 50px;
+    color: aliceblue;
+}
+main .main-banner .banner-heading p{
+    font-size: 18px;
+    line-height: 200%;
+    color: #000000;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+
+
+
+
+main .teacher-cards{
+    width: 1100px;
+    height: 399px;
+    /* border: 2px solid red; */
+    /* margin-top: 200px; */
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main .teacher-cards .card{
+    width: 250px;
+    height: 320px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 5px 5px 8px 1px rgb(96, 94, 94);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s;
+}
+main .teacher-cards .card:hover{
+    scale: 1.1;
+}
+main .teacher-cards .card .image-size{
+    width: 100%;
+    height: 220px;
+    /* border: 2px solid black; */
+}
+main .teacher-cards .card .image-size img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+main .teacher-cards button{
+    padding: 15px 33px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 420px;
+    letter-spacing: 1.1px;
+    transition: .4s;
+    margin-top: 30px;
+}
+main .teacher-cards .card h2{
+    padding-left: 5px;
+}
+main .teacher-cards .card h3{
+    padding-left: 5px;
+}
+main .teacher-cards .card p{
+    padding-left: 5px;
+}
+main .teacher-cards button:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+main .Students-cards{
+  width: 1300px;
+  height: 700px;
+  /* border: 2px solid red; */
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+main .Students-cards .card{
+    width: 220px;
+    height: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 8px 1px rgb(96, 94, 94);
+    gap: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+main .Students-cards .card:hover{
+    scale: 1.1;
+}
+main .Students-cards .card .image-size{
+    width: 100%;
+    height: 200px;
+    /* border: 2px solid red; */
+}
+main .Students-cards .card .image-size img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+main .Students-cards .card h2{
+    padding-left: 5px;
+}
+main .Students-cards .card h3{
+    padding-left: 5px;
+}
+main .Students-cards .card p{
+    padding-left: 5px;
+}
+main .Students-cards button{
+    padding: 13px 43px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: black;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .4s;
+}
+main .Students-cards button:hover{
+    scale: 1.1;
+    letter-spacing: 1.1px;
+}
+
+
+
+
+
+
+/* Responsiv */
+@media (max-width:447px){
+    .cointiner{
+        width: 100%;
+        min-height: 100vh;
+    }
+    header{
+        width: 410px;
+        height: 170px;
+        border-bottom: 1px solid black;
+        padding-top: 10px;
+    }
+    header nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav img{
+        width: 80px;
+        height: 60px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    header nav .navbar-links{
+        display: flex;
+        gap: 30px;
+    }
+    header nav .navbar-links li{
+        list-style: none;
+    }
+    header nav .navbar-links li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+        font-weight: 600;
+        position: relative;
+        transition: .4s;
+        margin-top: 5px;
+    }
+    header nav .navbar-links li a:hover{
+        color: rgb(255, 0, 0);
+    }
+    header nav .login{
+        width: 190px;
+        height: 60px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav .login button{
+       width: 70px;
+       height: 40px;
+       cursor: pointer;
+       font-size: 14px;
+       border-radius: 5px;
+       border: none;
+       box-shadow: 3px 3px 5px 0px rgb(104, 103, 103);
+       font-weight: 500;
+       position: relative;
+       transition: .2s;
+    }
+    header nav .navbar-links li a::after{
+        content: "";
+        width: 100%;
+        height: 0;
+        left: 0;
+        bottom: -4px;
+        background-color: black;
+        position: absolute;
+        transition: .1s;
+    }
+    header nav .navbar-links li a:hover::after{
+        height: 1px;
+    }
+    
+    header nav .login button:hover{
+        scale: 1.1;
+        letter-spacing: 1.1px;
+    }
+    header nav .login button:focus{
+        scale: 1;
+        letter-spacing: 0;
+    }
+    header nav .login button:hover{
+        background: linear-gradient(to right, yellow 5% 2%,rgb(255, 250, 250)5% 100%);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    main{
+        width: 100%;
+        height: 325vh;
+        /* border: 2px solid rgb(0, 0, 0); */
+    }
+    main>h1{
+      padding: 20px 0px;
+      font-size: 15px;
+      padding-left: 55px;
+    }
+    main>h1:nth-child(3){
+        padding: 60px 0px;
+        margin-left: 300px;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+    main>h1:nth-child(5){
+        /* margin-left: 300px; */
+        font-size: 15px;
+        padding-left: 90px;
+        margin: 0;
+        padding: 0;
+        padding-left: 35px;
+        padding-bottom: 10px;
+    }
+    main .main-banner{
+        width: 320px;
+        height: 289px;
+        /* border: 2px solid red; */
+        margin: 0;
+        margin-left: 42px;
+        background-image: url("https://www.globalexperiences.pitt.edu/sites/default/files/styles/gallery_default/public/gallery_images/University%20of%20New%20South%20Whales%20-%20Australia%20-%20Quad.jpg?itok=BZ9_gERD");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 5px 5px 10px 1px rgb(61, 60, 60);
+        display: flex;
+        border-radius: 4px;
+    }
+    main .main-banner .banner-heading{
+        width: 870px;
+        height: 180px;
+        /* border: 2px solid red;    */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 200px;
+    }
+    main .main-banner .banner-heading h1{
+        font-size: 13px;
+        color: aliceblue;
+    }
+    main .main-banner .banner-heading p{
+        font-size: 7px;
+        line-height: 200%;
+        color: #000000;
+        font-weight: 600;
+        color: aliceblue;
+    }
+    
+    
+    
+    
+    
+    main .teacher-cards{
+        width: 350px;
+        height: 549px;
+        /* border: 2px solid red; */
+        /* margin-top: 200px; */
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-left: 25px;
+    }
+    main .teacher-cards .card{
+        width: 150px;
+        height: 200px;
+        /* border: 2px solid rgb(0, 0, 0); */
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: 5px 5px 8px 1px rgb(96, 94, 94);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .5s;
+        padding-bottom: 5px;
+    }
+    main .teacher-cards .card:hover{
+        scale: 1.1;
+    }
+    main .teacher-cards .card .image-size{
+        width: 100%;
+        height: 220px;
+        /* border: 2px solid black; */
+    }
+    main .teacher-cards .card .image-size img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    main .teacher-cards button{
+        padding: 7px 8px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        background-color: #000000;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 420px;
+        letter-spacing: 0;
+        transition: .4s;
+        margin-top: 30px;
+        margin: 0;
+    }
+    main .teacher-cards .card h2{
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    main .teacher-cards .card h3{
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    main .teacher-cards .card p{
+        padding-left: 5px;
+        font-size: 12px;
+    }
+    main .teacher-cards button:hover{
+        scale: 1.1;
+    }
+    
+    
+    
+    
+    
+    main .Students-cards{
+      width: 400px;
+      height: 1400px;
+      /* border: 2px solid red; */
+      margin-left: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      margin: 0;
+      /* margin-left: 40px; */
+      margin-bottom: 100px;
+    }
+    main .Students-cards .card{
+        width: 165px;
+        height: 230px;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 8px 1px rgb(96, 94, 94);
+        gap: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .4s;
+    }
+    main .Students-cards .card:hover{
+        scale: 1.1;
+    }
+    main .Students-cards .card .image-size{ 
+        width: 100%;
+        height: 150px;
+        /* border: 2px solid red; */
+    }
+    main .Students-cards .card .image-size img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    main .Students-cards .card h2{
+        padding-left: 5px;
+        font-size: 17px;
+    }
+    main .Students-cards .card h3{
+        padding-left: 5px;
+        font-size: 15px;
+    }
+    main .Students-cards .card p{
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    main .Students-cards button{
+        padding: 10px 13px;
+        border-radius: 10px;
+        margin-top: 10px;
+        color: #fff;
+        background-color: black;
+        font-size: 19px;
+        cursor: pointer;
+        transition: .4s;
+        margin-bottom: 20px;
+    }
+    main .Students-cards button:hover{
+        scale: 1.1;
+        letter-spacing: 1.1px;
+    }
+    
+}
